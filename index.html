@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown to Our Baby!</h1>
+        <div id="countdown"></div>
+        <div class="progress">
+            <div class="progress-bar" style="width: 70%;">70% Complete</div>
+        </div>
+        <div class="trimester">
+            <h2>Currently in: Third Trimester</h2>
+        </div>
+        <div class="milestones">
+            <h3>Pregnancy Facts & Milestones</h3>
+            <ul>
+                <li>Week 30: Baby's size is similar to a cucumber!</li>
+                <li>Week 31: Your baby can hear you!</li>
+                <li>Week 32: Prepare for baby's arrival!</li>
+            </ul>
+        </div>
+        <div class="checklist">
+            <h3>Checklist</h3>
+            <ul>
+                <li><input type="checkbox"> Nursery</li>
+                <li><input type="checkbox"> Gear</li>
+                <li><input type="checkbox"> Hospital Bag</li>
+                <li><input type="checkbox"> Documentation</li>
+            </ul>
+        </div>
+        <div class="statistics">
+            <h3>Statistics Dashboard</h3>
+            <p>Days until due date: <span id="daysLeft"></span></p>
+        </div>
+        <div class="name-brainstorm">
+            <h3>Baby Name Ideas</h3>
+            <input type="text" id="babyName" placeholder="Enter name...">
+            <button onclick="addName()">Add Name</button>
+            <ul id="nameList"></ul>
+        </div>
+        <div class="messages">
+            <h3>Messages to Baby</h3>
+            <textarea id="personalMessage" placeholder="Write a message..."></textarea>
+            <button onclick="saveMessage()">Save Message</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
